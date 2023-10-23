@@ -4,7 +4,9 @@ var accountPassword = "12345"
 accountCity = "karachi"
 let accountState;
 // const = value will not change
-// accountId = 2 not allowed
+// accountId = 2 // not allowed
+
+
 
 // {
 //     scope
