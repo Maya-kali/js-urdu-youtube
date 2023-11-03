@@ -29,5 +29,47 @@ let BooleanLoggedIn = Boolean(isLoggedIn)
 let someNumber = '33 abc'
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// ****************************Operation*********************
+
+let Value = 33
+let negValue = -Value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "Hello"
+let str2 = " Saad"
+let str3 = str1 + str2
+console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+// console.log( (2 + 4) * 4 % 3);
+
+let num1, num2, num3
+num1 = num2 = num3 = 3+2
+
+let gameCounter = 100
+gameCounter--;
+console.log(gameCounter);
+
+
+let x = 3
+let y = x++ // Postfix
+
+console.log("Postfix: " + y);
+
+let x2 = 3
+let y2 = ++x2  // Prefix
+
+console.log("Prefix: " + y2);
