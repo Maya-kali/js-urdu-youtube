@@ -11,32 +11,4 @@ ctrl + x = delete line
 ctrl + c = copy / ctrl + v = paste
 ctrl + c + downArrow = copy 
 
-ctrl + shift + [ or ] = fold or unfold
-ctrl
-ctrl
-ctrl
-ctrl
-ctrl
-
-
-
-
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-background 1   
-
-background 2
-
-background 3
-background 4
-background 5
+ctrl + shift + [ or ] = fold or unfold                        
