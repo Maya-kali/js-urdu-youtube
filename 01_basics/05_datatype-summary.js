@@ -46,3 +46,34 @@ const myFunction = function(){
 }
 
 console.log(typeof id);
+
+// ===========================================================================
+
+
+// Memory
+// 2 Types: Stack (Primitive) , Heap (Non Primitive)
+//Copy Value                  , // Original value reference 
+
+let myYouTubeName = "SaadAhmadKhan"
+
+let anOtherName = myYouTubeName
+
+anOtherName = "SAK"
+
+
+let userOne = {
+    email: "saad@gmail.com",
+    hbl: "saad@hbl.com",
+}
+
+let userTwo = userOne
+
+userTwo.email = "saad@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+console.log(myYouTubeName);
+console.log(anOtherName);
+console.log(userTwo);
