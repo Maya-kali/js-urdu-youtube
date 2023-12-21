@@ -4,9 +4,7 @@
 // constructors = singleton constructor
 // Object.create
 
-// Object Literals
-
-
+// Object Literalton
 const mysymbol = Symbol("key1")
 
 const jsUser = {

@@ -11,7 +11,7 @@ const dc_heros = ['ironman', 'flesh', 'batman']
 // console.log(allHeros);
 
 // this easy way to create a single array
-const all_new_heros = [...marvel_heros, ...dc_heros]    
+const all_new_heros = [...marvel_heros, ...dc_heros] // ...means that spreading   
 console.log(all_new_heros);
 
 console.log(Array.isArray("Saad"))
