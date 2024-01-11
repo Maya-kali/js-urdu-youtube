@@ -1,10 +1,10 @@
     // The array object, as with arrays in other programming languages, 
     // enables storing a collection of multiple items under a single variable name, and has numbers for
     // performance common array operations.
-    // () Perenthesis
+    // () Parenthesis
     // [] Square Brackets
-    // {} Curly Brackets    
-
+    // {} Curly Brackets
+    // `` backtis brackets    
     // in brackets called elements, and elements are in brackets strings, numbers and mixed. 
     const myArr = [0, 1, 2, 3, 4, 5,]
     const myHeros = ["Shaktiman", "naagraj"]

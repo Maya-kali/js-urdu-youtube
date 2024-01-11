@@ -1,0 +1,55 @@
+JavaScript ExecutionContext
+JS run Two-way execution
+codefiles.js Global ExecutionContext (this value in browser window object) important 
+
+- Global ExecutionContext
+- Function ExecutionContext
+- in mongos and Eval ExecutionContext
+
+[code] = Memory creation phase = Allocate memory 
+[code] = Execution Phase = run variable multiplication, etc.
+
+let val1 = 4;
+let val2 = 5;
+
+function addNum(num1, num2) {
+    let total = num1 + num2;
+    return total
+}
+let result = addNum(num1, num2);
+let result2 = addNum(10, 2)
+
+
+
+1 - Global ExecutionContext = Allocate in this
+2 - Memory creation phase is called first cycle. = collect all variable multiplication
+    a - val1 = undefined
+    b - val2 = undefined
+    c - addNum = Definition 
+ 
+    (num1, num2) {
+    let total = num1 + num2;
+    return total
+}
+    d - result = undefined
+    e - result2 = undefined
+
+
+3 - Execution Phase
+    a - val1 = 4;
+    b - val2 = 5;
+    c - addNum [new variable environment + execution thread] and it will delete.
+    c1 - result = 9
+    c2 - result2 = 12
+
+    d - Memory creation phase
+        val1 = undefined
+        val2 = undefined
+        total = undefined
+
+    e - Execution phase
+        num1 = 4;
+        num2 = 5;
+        total = 9
+
+go to browser execution phase
