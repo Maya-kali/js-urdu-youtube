@@ -1,0 +1,52 @@
+body{
+    
+    
+}
+nav{
+    width: 950px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+nav a{
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.canvas{
+    width: 650px;
+    margin: auto;
+    padding: 10px;
+
+
+}
+#grey {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5px auto;
+    background-color: gray;
+}
+#blue {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: blue;
+}
+#white {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: #fff;
+}
+#yellow {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: yellow;
+}
+#purple {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: purple;
+}
