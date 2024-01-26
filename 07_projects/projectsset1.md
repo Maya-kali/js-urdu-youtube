@@ -35,15 +35,16 @@ button.forEach(function (button) {
     }
   });
 });
+
 ```
 ##
 
 ## project 2
 
 
-```
+```javascript
 const form = document.querySelector("form");
-// this usecase will give you empty
+// this use case will give you empty
 // const height = parseInt(document.querySelector('#height').value)
 
 form.addEventListener("submit", function (e) {
@@ -65,4 +66,19 @@ form.addEventListener("submit", function (e) {
   }
 });
 
+
+```
+##
+## project 3
+
+```javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+// control events method = two functions + body + , + second parameter + 1000
+setInterval(function(){
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
 ```

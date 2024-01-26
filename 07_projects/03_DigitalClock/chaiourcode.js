@@ -1,0 +1,9 @@
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+// control events method = two functions + body + , + second parameter + 1000
+setInterval(function(){
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
