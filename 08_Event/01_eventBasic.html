@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h2>Amazing Image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            src="https://images.pexels.com/photos/19400415/pexels-photo-19400415/free-photo-of-a-person-paragliding-over-a-mountain-range.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            width="200"
+            id="fly"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.pexels.com/photos/17758065/pexels-photo-17758065/free-photo-of-a-tote-bag-with-writing-on-it-in-the-sand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            width="200"
+            id="beg"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.pexels.com/photos/19954570/pexels-photo-19954570/free-photo-of-a-concrete-wall-with-a-blue-sky-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            width="200"
+            id="wall"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.pexels.com/photos/19895853/pexels-photo-19895853/free-photo-of-a-sailboat-is-sailing-in-the-ocean-near-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            width="200"
+            id="ship"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            src="https://images.pexels.com/photos/11719062/pexels-photo-11719062.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            width="200"
+            id="bridge"
+            alt="photoshop"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById('bridge').onclick = function() {
+    // alert("click on bridge")
+    // };
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented,
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlKey, shiftKey, keyCode,
+
+    // capturing events = true
+    // bubbling events = false
+    // stopPropagation is bubbled and not going to top level event
+    // best Example
+    // document.getElementById("images").addEventListener("click", function (e) {
+    //   console.log("click inside the Ul");
+    // }, false);
+    //
+    // document.getElementById("bridge").addEventListener("click", function (e) {
+    //   console.log("click bridge")
+    //   e.stopPropagation();
+    // }, false);
+
+
+    // project
+
+    document.getElementById("images").addEventListener("click", function (e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            
+        }
+    })
+  </script>
+</html>

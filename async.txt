@@ -1,0 +1,22 @@
+JavaScript 
+    Synchronous
+    . one by one execute code
+    
+    Single Language thread 
+    . default 
+
+    Execution context
+     console.log - 1
+     console.log - 2
+
+Blocking code VS Non-blocking code
+Blocking code:
+
+ . block the flow of program
+    . read file Sync
+
+
+Non-blocking code:
+ . Does not block execution
+    . read file Async 
+
